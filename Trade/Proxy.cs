@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
 
-namespace Trade
+namespace TradeAPI
 {
 
     // exchange[8], xxxtime[16], id[32], msg[128]

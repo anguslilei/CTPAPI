@@ -7,7 +7,7 @@
     <ProjectGuid>{597AE6F4-ABA5-4663-A410-92338AEA7652}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Quote</RootNamespace>
+    <RootNamespace>QuoteAPI</RootNamespace>
     <AssemblyName>Quote</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -7,7 +7,7 @@
     <ProjectGuid>{B43BB44D-2734-4789-BFC3-3EDC7CAA31B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Trade</RootNamespace>
+    <RootNamespace>TradeAPI</RootNamespace>
     <AssemblyName>Trade</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
