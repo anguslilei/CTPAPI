@@ -84,9 +84,11 @@ namespace TradeAPI
 
     public class Trade
     {
+        private bool isStarted;
         private Proxy _proxy;
         public Trade(string pProxyFile)
         {
+            isStarted = false;
             _proxy = new Proxy(pProxyFile);
             _proxy.OnFrontConnected += _import_OnFrontConnected;
             _proxy.OnRspUserLogin += _import_OnRspUserLogin;
@@ -528,6 +530,8 @@ namespace TradeAPI
             {
                 info.SetValue(f, info.GetValue(pInstrument));
             }
+            isStarted = true;
+
         }
 
         void _import_OnRspUserLogout(int pReason)

@@ -277,7 +277,7 @@ namespace QuoteAPI
             {
                 //_file = DateTime.Now.Ticks + ".dll";
                 //	File.Copy(pFile, _file);
-
+                
                 //	this._handle = LoadLibrary(_file); // Environment.CurrentDirectory + "\\" + pFile);
                 this._handle = LoadLibrary(pFile);
             }

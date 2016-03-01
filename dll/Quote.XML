@@ -4,87 +4,87 @@
         <name>Quote</name>
     </assembly>
     <members>
-        <member name="T:Quote.MarketData">
+        <member name="T:QuoteAPI.MarketData">
             深度行情
         </member>
-        <member name="F:Quote.MarketData.InstrumentID">
+        <member name="F:QuoteAPI.MarketData.InstrumentID">
             <summary>
             合约代码
             </summary>
         </member>
-        <member name="F:Quote.MarketData.LastPrice">
+        <member name="F:QuoteAPI.MarketData.LastPrice">
             <summary>
             最新价
             </summary>
         </member>
-        <member name="F:Quote.MarketData.BidPrice">
+        <member name="F:QuoteAPI.MarketData.BidPrice">
              <summary>
             申买价一
              </summary>
         </member>
-        <member name="F:Quote.MarketData.BidVolume">
+        <member name="F:QuoteAPI.MarketData.BidVolume">
              <summary>
             申买量一
              </summary>
         </member>
-        <member name="F:Quote.MarketData.AskPrice">
+        <member name="F:QuoteAPI.MarketData.AskPrice">
              <summary>
             申卖价一
              </summary>
         </member>
-        <member name="F:Quote.MarketData.AskVolume">
+        <member name="F:QuoteAPI.MarketData.AskVolume">
              <summary>
             申卖量一
              </summary>
         </member>
-        <member name="F:Quote.MarketData.AveragePrice">
+        <member name="F:QuoteAPI.MarketData.AveragePrice">
              <summary>
             当日均价
              </summary>
         </member>
-        <member name="F:Quote.MarketData.Volume">
+        <member name="F:QuoteAPI.MarketData.Volume">
              <summary>
             数量
              </summary>
         </member>
-        <member name="F:Quote.MarketData.OpenInterest">
+        <member name="F:QuoteAPI.MarketData.OpenInterest">
              <summary>
             持仓量
              </summary>
         </member>
-        <member name="F:Quote.MarketData.UpdateTime">
+        <member name="F:QuoteAPI.MarketData.UpdateTime">
              <summary>
             最后修改时间:yyyyMMdd HH:mm:ss(20141114:日期由主程序处理,因大商所取到的actionday==tradingday)
              </summary>
         </member>
-        <member name="F:Quote.MarketData.UpdateMillisec">
+        <member name="F:QuoteAPI.MarketData.UpdateMillisec">
              <summary>
             最后修改毫秒
              </summary>
         </member>
-        <member name="F:Quote.MarketData.UpperLimitPrice">
+        <member name="F:QuoteAPI.MarketData.UpperLimitPrice">
              <summary>
             涨停板价
              </summary>
         </member>
-        <member name="F:Quote.MarketData.LowerLimitPrice">
+        <member name="F:QuoteAPI.MarketData.LowerLimitPrice">
              <summary>
             跌停板价
              </summary>
         </member>
-        <member name="M:Quote.MarketData.ToString">
+        <member name="M:QuoteAPI.MarketData.ToString">
              <summary>
             输入Tick信息
              </summary>
         </member>
-        <member name="M:Quote.Proxy.LoadLibrary(System.String)">
+        <member name="M:QuoteAPI.Proxy.LoadLibrary(System.String)">
             <summary>
                 原型是 :HMODULE LoadLibrary(LPCTSTR lpFileName);
             </summary>
             <param name="lpFileName"> DLL 文件名 </param>
             <returns> 函数库模块的句柄 </returns>
         </member>
-        <member name="M:Quote.Proxy.GetProcAddress(System.IntPtr,System.String)">
+        <member name="M:QuoteAPI.Proxy.GetProcAddress(System.IntPtr,System.String)">
             <summary>
                 原型是 : FARPROC GetProcAddress(HMODULE hModule, LPCWSTR lpProcName);
             </summary>
@@ -92,14 +92,14 @@
             <param name="lpProcName"> 调用函数的名称 </param>
             <returns> 函数指针 </returns>
         </member>
-        <member name="M:Quote.Proxy.FreeLibrary(System.IntPtr)">
+        <member name="M:QuoteAPI.Proxy.FreeLibrary(System.IntPtr)">
             <summary>
                 原型是 : BOOL FreeLibrary(HMODULE hModule);
             </summary>
             <param name="hModule"> 需释放的函数库模块的句柄 </param>
             <returns> 是否已释放指定的 Dll </returns>
         </member>
-        <member name="M:Quote.Proxy.Invoke(System.IntPtr,System.String,System.Type)">
+        <member name="M:QuoteAPI.Proxy.Invoke(System.IntPtr,System.String,System.Type)">
             <summary>
             
             </summary>
@@ -109,93 +109,93 @@
             <returns></returns>
             <exception cref="T:System.Exception"></exception>
         </member>
-        <member name="M:Quote.Proxy.LoadDll(System.String)">
+        <member name="M:QuoteAPI.Proxy.LoadDll(System.String)">
             <summary>
             加载C++文件,取得相应函数
             </summary>
         </member>
-        <member name="T:Quote.IntEventArgs">
+        <member name="T:QuoteAPI.IntEventArgs">
             <summary>
             
             </summary>
         </member>
-        <member name="F:Quote.IntEventArgs.Value">
+        <member name="F:QuoteAPI.IntEventArgs.Value">
             <summary>
             错误代码
             </summary>
         </member>
-        <member name="T:Quote.TickEventArgs">
+        <member name="T:QuoteAPI.TickEventArgs">
             <summary>
             数据事件
             </summary>
         </member>
-        <member name="F:Quote.TickEventArgs.Tick">
+        <member name="F:QuoteAPI.TickEventArgs.Tick">
             <summary>
             
             </summary>
         </member>
-        <member name="F:Quote.ErrorEventArgs.ErrorID">
+        <member name="F:QuoteAPI.ErrorEventArgs.ErrorID">
             <summary>
             错误代码
             </summary>
         </member>
-        <member name="F:Quote.ErrorEventArgs.ErrorMsg">
+        <member name="F:QuoteAPI.ErrorEventArgs.ErrorMsg">
             <summary>
             错误说明
             </summary>
         </member>
-        <member name="M:Quote.Quote.#ctor(System.String)">
+        <member name="M:QuoteAPI.Quote.#ctor(System.String)">
             <summary>
             导入C++dll文件
             </summary>
             <param name="pFile">文件名(包含完整路径)</param>
         </member>
-        <member name="F:Quote.Quote.DicTick">
+        <member name="F:QuoteAPI.Quote.DicTick">
             <summary>
             Tick数据
             </summary>
         </member>
-        <member name="F:Quote.Quote._OnRtnTick">
+        <member name="F:QuoteAPI.Quote._OnRtnTick">
             <summary>
             行情响应用
             </summary>
         </member>
-        <member name="F:Quote.Quote.Server">
+        <member name="F:QuoteAPI.Quote.Server">
             <summary>
             服务器名称
             </summary>
         </member>
-        <member name="F:Quote.Quote.Broker">
+        <member name="F:QuoteAPI.Quote.Broker">
             <summary>
             经济公司代码
             </summary>
         </member>
-        <member name="F:Quote.Quote.Investor">
+        <member name="F:QuoteAPI.Quote.Investor">
             <summary>
             帐号
             </summary>
         </member>
-        <member name="F:Quote.Quote.Password">
+        <member name="F:QuoteAPI.Quote.Password">
             <summary>
             密码
             </summary>
         </member>
-        <member name="E:Quote.Quote.OnRtnTick">
+        <member name="E:QuoteAPI.Quote.OnRtnTick">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Quote.Quote.TradingDay">
+        <member name="P:QuoteAPI.Quote.TradingDay">
             <summary>
             交易日
             </summary>
         </member>
-        <member name="P:Quote.Quote.IsLogin">
+        <member name="P:QuoteAPI.Quote.IsLogin">
             <summary>
                 登录成功
             </summary>
         </member>
-        <member name="T:Quote.Quote.RtnTick">
+        <member name="T:QuoteAPI.Quote.RtnTick">
             <summary>
             
             </summary>
